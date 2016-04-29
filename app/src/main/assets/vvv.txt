@@ -1,0 +1,6 @@
+001,pub,Charlie Chaplins, Cruises Street,Blah blah blah,0,0,0,0,0,0,0
+002,pub,xxx, Main st,Blah blah blah,0,0,0,0,0,0,0
+003,pub,yyy, O Connel St,Blah blah blah,0,0,0,0,0,0,0
+101,club,ihikjh, Dublin,Blah blah blah,0,0,0,0,0,0,0
+102,club,the club, here,Blah blah blah,0,0,0,0,0,0,0
+103,club,hhhhhhh, Limerick,Blah blah blah,0,0,0,0,0,0,0

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DisplayActivity"
+    tools:showIn="@layout/activity_display"
+    android:background="#FFFF44">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/nameText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:longClickable="false"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/addressText"
+        android:layout_below="@+id/nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text"/>
+
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="180dp"
+        android:id="@+id/picture"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="false"
+        android:longClickable="false"
+        android:src="@drawable/liquor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mon"
+        android:id="@+id/dayText1"
+        android:layout_below="@+id/addressText"
+        android:layout_alignLeft="@+id/monBtn"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wed"
+        android:id="@+id/dayText3"
+        android:layout_alignLeft="@+id/wedBtn"
+        android:layout_alignBottom="@+id/dayText1"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thur"
+        android:id="@+id/dayText4"
+        android:layout_alignLeft="@+id/thurBtn"
+        android:layout_alignBottom="@+id/dayText1"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fri"
+        android:id="@+id/dayText5"
+        android:layout_alignLeft="@+id/friBtn"
+        android:layout_alignBottom="@+id/dayText1"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sat"
+        android:id="@+id/dayText6"
+        android:layout_alignLeft="@+id/satBtn"
+        android:layout_alignBottom="@+id/dayText1"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sun"
+        android:id="@+id/dayText7"
+        android:layout_alignLeft="@+id/sunBtn"
+        android:layout_alignBottom="@+id/dayText1"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tue"
+        android:id="@+id/dayText2"
+        android:layout_alignLeft="@+id/tueBtn"
+        android:layout_alignBottom="@+id/dayText1"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/monBtn"
+        android:layout_toLeftOf="@+id/tueBtn"
+        android:layout_alignBottom="@+id/tueBtn"
+        android:background="#FFFF44"
+        android:maxWidth="50dp"
+        android:minWidth="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tueBtn"
+        android:background="#FFFF44"
+        android:layout_toLeftOf="@+id/wedBtn"
+        android:layout_alignBottom="@+id/wedBtn"
+        android:maxWidth="50dp"
+        android:minWidth="50dp"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/wedBtn"
+        android:background="#FFFF44"
+        android:layout_toLeftOf="@+id/thurBtn"
+        android:layout_alignBottom="@+id/thurBtn"
+        android:maxWidth="50dp"
+        android:minWidth="50dp"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/thurBtn"
+        android:background="#FFFF44"
+        android:layout_below="@+id/addressText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:maxWidth="50dp"
+        android:minWidth="50dp"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/friBtn"
+        android:background="#FFFF44"
+        android:layout_toRightOf="@+id/thurBtn"
+        android:layout_alignBottom="@+id/thurBtn"
+        android:maxWidth="50dp"
+        android:minWidth="50dp"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/satBtn"
+        android:background="#FFFF44"
+        android:layout_toRightOf="@+id/friBtn"
+        android:layout_alignBottom="@+id/friBtn"
+        android:maxWidth="50dp"
+        android:minWidth="50dp"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/sunBtn"
+        android:background="#FFFF44"
+        android:layout_toRightOf="@+id/satBtn"
+        android:layout_alignBottom="@+id/satBtn"
+        android:maxWidth="50dp"
+        android:minWidth="50dp" />
+
+    <EditText
+        android:id="@+id/descText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/monBtn"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
